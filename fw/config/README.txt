@@ -1,0 +1,1 @@
+Copy config.json on the SD card.

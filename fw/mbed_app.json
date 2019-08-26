@@ -1,0 +1,42 @@
+{
+    "config": {
+        "config_file": {
+            "help": "Path to the system configuration file on the SD card",
+            "value": "\"config.json\""
+        },
+        "config_max_tokens": {
+            "help": "Maximum number of tokens in the configuration file",
+            "value": "16"
+        },
+        "storage_root" : {
+            "help": "Folder on the SD card under which to store various data buckets",
+            "value": "\"\""
+        },
+        "default_led_frequency": {
+            "help": "Default value of led_frequency",
+            "value": "0.1"
+        }, 
+        "default_greeting": {
+            "help": "Default value of greeting",
+            "value": "\"Default Greeting\""
+        },       
+        "sd_mount_path": {
+            "help": "Path where the SD card will be mounted to",
+            "value": "\"sd\""
+        },
+        "rand_pin" : {
+            "help": "Analog input pin to use for initializing random number generator",
+            "value": "A5"
+        }
+        
+    },
+    "target_overrides": {
+        "NUCLEO_F767ZI": {
+            "target.components_add": ["SD"],
+            "sd.SPI_MOSI": "D11",
+            "sd.SPI_MISO": "D12",
+            "sd.SPI_CLK": "D13",
+            "sd.SPI_CS": "D10"
+        }
+    }
+}
