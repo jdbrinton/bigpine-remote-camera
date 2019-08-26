@@ -1,6 +1,6 @@
 # Bigpine Remote Camera
 
-Bigpine is an embedded STM32F7 microcontroller based remote camera. It uses Arducam and a SIM7100A modem for streaming photos back to a server. It runs on batteries or solar panels and has a peak-power. Bigpine is designed to snap and upload 24 photos per day and last for 3 years on a 100W-hr primary cell battery. Of course this can be tweaked for your application. Something ridiculous like 10,000 photos a day is probably doable, but you'll have to do your own power budget. Remember, this runs on a microcontroller.
+Bigpine is an embedded STM32F7 microcontroller based remote camera. It uses Arducam and a SIM7100A modem for streaming photos back to a server. It runs on batteries and/or solar panels and has a peak-power tracker. Bigpine is designed to snap and upload 24 photos per day and last for 3 years on a 100W-hr primary cell battery. Of course this can be tweaked for your application. Something ridiculous like 10,000 photos a day is probably doable, but you'll have to do your own power budget. Remember, this runs on a microcontroller.
 
 ## Architecture
 
